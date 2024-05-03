@@ -1,0 +1,526 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Resource Reference" href="reference.html" /><link rel="prev" title="The CALM Brain Resource" href="index.html" />
+
+    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.3.7 and Furo 2024.04.27 -->
+        <title>From access to analysis - CALM Brain documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=649a27d8" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=437aa6ec" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f0f0f0;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">CALM Brain  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/logo-full-calmbrain.png" alt="Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">From access to analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">Resource Reference</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="examples/index.html">Examples Gallery</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Examples Gallery</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples/1_mean_eeg.html">Cohort-wise resting state EEG distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/2_hippo_brain_ratio.html">Cohort-wise Hippocampus to Total Brain Volume ratio distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setting up the Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-use-terms.html">Data Use Terms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="edit-this-page">
+  <a class="muted-link" href="https://github.com/girishmm/calm-brain/edit/main/docs/source/user-guide.rst" title="Edit this page">
+    <svg aria-hidden="true" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+      <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+    </svg>
+    <span class="visually-hidden">Edit this page</span>
+  </a>
+</div><div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="from-access-to-analysis">
+<h1>From access to analysis<a class="headerlink" href="#from-access-to-analysis" title="Link to this heading">¶</a></h1>
+<p>The CALM-Brain resource is a rich collection of data obtained from
+over 1000 subjects. To know more about the contents of the dataset,
+please head over to <a class="reference internal" href="reference.html"><span class="doc">Resource Reference</span></a>. The resource is made of two
+parts: <em>data files</em> that organized according to or close to <a class="reference external" href="https://bids.neuroimaging.io/">BIDS</a>
+and <em>tabular records</em> that are stored in SQL tables.</p>
+<section id="requesting-for-access">
+<h2>Requesting for access<a class="headerlink" href="#requesting-for-access" title="Link to this heading">¶</a></h2>
+<p>If you are interested and would like access, we are happy to help
+you. Due to the sensitive nature of the dataset, it is currently not
+possible to make it openly available. Please raise an access request
+from the <a class="reference external" href="https://www.calm-brain.ncbs.res.in/">portal</a> and you will receive your credentials for access
+shortly. You might want to check out <a class="reference internal" href="#looking-without-touching"><span class="std std-ref">Looking without touching</span></a>
+before raising the request if you would like to confirm if the
+resource fits your needs.</p>
+<p>It is possible to request for compute resources too and run analysis
+locally on the server too!!</p>
+<p>Once you have hold of your credentials, you can access the data files
+of the resource!!  To quickly skim through the contents, head over to
+the <a class="reference external" href="http://tekeli.ncbs.res.in:3000/">GIN instance</a>. You can think of this as GitHub for
+datasets. Once you login, you will notice that you are a part of the
+CBM organization and can access parts of the resource you have been
+approved to. You can now download the data files to your local
+system and use it :)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>GIN is <a class="reference external" href="https://www.datalad.org/">DataLad</a> compatible. This means, when the dataset is
+cloned, not all file contents will be available right after. Only
+small files will be available right away. So, you can <a class="reference external" href="https://handbook.datalad.org/en/latest/basics/101-116-sharelocal.html">look without
+touching</a> datalad style.</p>
+</div>
+</section>
+<section id="looking-without-touching">
+<span id="id1"></span><h2>Looking without touching<a class="headerlink" href="#looking-without-touching" title="Link to this heading">¶</a></h2>
+<p>The <a class="reference external" href="https://www.calm-brain.ncbs.res.in/">portal</a> has a search bar which allows querying the resource with
+arguments compatible with <a class="reference external" href="https://girishmm.github.io/almirah/">almirah</a> based on the <code class="docutils literal notranslate"><span class="pre">Specification</span></code>
+used. Since CALM-Brain is organized according to BIDS, all
+BIDS-entities are accepted as arguments. The <code class="docutils literal notranslate"><span class="pre">returns</span></code> argument
+allows you to mention the preferred return type. It defaults to the
+string representation of <cite>~layout.File</cite> by default.</p>
+<p>Here are some queries you can try find data files:</p>
+<ol class="arabic">
+<li><p>Files that are belong to the EEG modality.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">datatype</span><span class="o">=</span><span class="s2">&quot;eeg&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>EEG files that belong to the subject ‘<em>D0019</em>’.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">datatype</span><span class="o">=</span><span class="s2">&quot;eeg&quot;</span><span class="p">,</span> <span class="n">subject</span><span class="o">=</span><span class="s2">&quot;D0019&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>EEG files that belong to the first session of the subject ‘<em>D0019</em>’.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">datatype</span><span class="o">=</span><span class="s2">&quot;eeg&quot;</span><span class="p">,</span> <span class="n">subject</span><span class="o">=</span><span class="s2">&quot;D0019&quot;</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="s2">&quot;101&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>EEG files recorded during the auditory paired-click paradigm task
+that belong to the first session of the subject ‘<em>D0019</em>’.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">datatype</span><span class="o">=</span><span class="s2">&quot;eeg&quot;</span><span class="p">,</span> <span class="n">subject</span><span class="o">=</span><span class="s2">&quot;D0019&quot;</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="s2">&quot;101&quot;</span><span class="p">,</span> <span class="n">task</span><span class="o">=</span><span class="s2">&quot;auditoryPCP&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>EEG files recorded during the auditory paired-click paradigm task
+of either subject ‘<em>D0019</em>’ or ‘<em>D0274</em>’.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">datatype</span><span class="o">=</span><span class="s2">&quot;eeg&quot;</span><span class="p">,</span> <span class="n">subject</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;D0019&quot;</span><span class="p">,</span> <span class="s2">&quot;D0274&quot;</span><span class="p">],</span> <span class="n">task</span><span class="o">=</span><span class="s2">&quot;auditoryPCP&quot;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>To have a peek at the tabular records, you can provide the <em>table
+name</em> of interest using the <code class="docutils literal notranslate"><span class="pre">table</span></code> argument. To find the <em>table
+name</em> for a questionnaire or cognitive test, check out the
+<a class="reference internal" href="reference.html"><span class="doc">Resource Reference</span></a>.</p>
+<p>Here are some more queries to get tabular records:</p>
+<ol class="arabic">
+<li><p>Get the list of subjects.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">table</span><span class="o">=</span><span class="s2">&quot;subjects&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Get only the ‘<em>subject ID</em>’ from the list of subjects.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">table</span><span class="o">=</span><span class="s2">&quot;subjects&quot;</span><span class="p">,</span> <span class="n">returns</span><span class="o">=</span><span class="s2">&quot;subjectID&quot;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Results from the search query can be downloaded as a csv file.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you would like assistance building more sophisticated queries,
+use the query builder below the search bar. Some pre-built queries
+are available further below. Try them out!</p>
+</div>
+</section>
+<section id="obtaining-a-subset-of-data-files">
+<h2>Obtaining a subset of data files<a class="headerlink" href="#obtaining-a-subset-of-data-files" title="Link to this heading">¶</a></h2>
+<p>Let us <em>look without touching</em> using <a class="reference external" href="https://girishmm.github.io/almirah/">almirah</a>. This is often helpful
+when you want to run an analysis on a storage constrained system and
+you are interested in only a subset of the data files. For example,
+you would like to download data relating to only the OCD cohort or
+specific to resting state EEG. This is the same as the search bar, but
+here you can find files that fit your need and download them. Then,
+you can pass these maybe to a python function you have written. Search
+bar is helpful for checking out the resource, but it cannot interface
+with toolkits and allow analysis.</p>
+<p>Each dataset release comes with an index. The index is an <cite>SQLite</cite>
+file that can be downloaded from the portal. This index is the same
+thing that is looked up by the search bar in the backend to provide
+the results you see. The index allows you to filter through the
+resource by associating each file in the resource to a set of tags and
+storing it.</p>
+<p>The index is also pre-populated with the details of the different
+components that make up CALM-Brain. So, you can concentrate on using
+the resource instead of adding in the components. <a class="reference external" href="https://girishmm.github.io/almirah/">almirah</a> by
+default looks for this index at system home. If have requested for
+compute resources and are currently using the server to access the
+resource locally, then you are good to go! If not, you will have to
+download the index and set it up for use.</p>
+<p>Since, we do not know where you plan to store the dataset components,
+the root for different layouts is set to various dummy paths like
+<em>/path/to/data</em>. It is <strong>NECESSARY</strong> that you change this if you are
+<strong>not using the resource locally</strong>!! This can be done with <a class="reference external" href="https://girishmm.github.io/almirah/">almirah</a>
+like so:</p>
+<ol class="arabic">
+<li><p>Download the release-specific index to your home directory from the portal.</p></li>
+<li><p>Set the path for different components.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">almirah</span> <span class="kn">import</span> <span class="n">Dataset</span>
+
+<span class="c1"># Retrieve the layout you are interested in.</span>
+<span class="c1"># Dummy path have been used while creating the index.</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">Dataset</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;calm-brain&#39;</span><span class="p">)</span>
+
+<span class="c1"># View components</span>
+<span class="n">dataset</span><span class="o">.</span><span class="n">components</span>
+
+<span class="c1"># Choose a components</span>
+<span class="n">layout</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># Change the layout path.</span>
+<span class="n">layout</span><span class="o">.</span><span class="n">move_root</span><span class="p">(</span><span class="s1">&#39;/your/local/path&#39;</span><span class="p">)</span>
+
+<span class="c1"># Clone the dataset from host to local path.</span>
+<span class="n">layout</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Now, you have successfully got the look-only version of the data. You
+can now query the layout object to get files that only match your
+needs.</p>
+<p>Say, you only want resting state EEG data, then:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Provide tags that fit your search criteria</span>
+<span class="n">files</span> <span class="o">=</span> <span class="n">layout</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">datatype</span><span class="o">=</span><span class="s1">&#39;eeg&#39;</span><span class="p">,</span> <span class="n">task</span><span class="o">=</span><span class="s1">&#39;rest&#39;</span><span class="p">)</span>
+
+<span class="c1"># Download these files</span>
+<span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="n">file</span><span class="o">.</span><span class="n">download</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Now, you have downloaded the files that fit your search criteria. The
+rest are still look-only files without their contents.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The same effect can be achieved using only <a class="reference external" href="https://www.datalad.org/">DataLad</a> commands to
+some extent. One approach would be to pair commands with patterns
+to choose specific filenames. But obtaining files that match
+certain metadata and study-specific parameters would not be
+possible this way.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you don’t know what tags to try, use <a class="reference external" href="https://girishmm.github.io/almirah/reference/almirah.layout.html#almirah.layout.Tag.options">options()</a>
+to display the possibilities.</p>
+</div>
+</section>
+<section id="retrieving-tabular-data">
+<h2>Retrieving tabular data<a class="headerlink" href="#retrieving-tabular-data" title="Link to this heading">¶</a></h2>
+<p>The database information is already built into the index and is in
+<em>request</em> mode, so all you need is provide the <em>table name</em> to
+query. Same as in the search bar. Easy right?</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">almirah</span> <span class="kn">import</span> <span class="n">Dataset</span>
+
+<span class="c1"># Retrieve the db from components.</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">Dataset</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;calm-brain&#39;</span><span class="p">)</span>
+<span class="n">db</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># Get the records you need from a table.</span>
+<span class="n">records</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">get_table</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;table_name&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>The records are returned as a <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html" title="(in pandas v2.2.2)"><span>pandas.DataFrame</span></a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use the <a class="reference internal" href="reference.html"><span class="doc">Resource Reference</span></a> to checkout the info provided by
+each table. This will help you find which table has the info you
+need.</p>
+</div>
+</section>
+<section id="analysis">
+<h2>Analysis<a class="headerlink" href="#analysis" title="Link to this heading">¶</a></h2>
+<p>Now you know how to access and retrieve contents of the CALM-Brain
+resource. How can you use it?</p>
+<p>We leave that to you and look forward to how this resource helps with
+the question of your interest. Since it is not possible to
+exhaustively support all analysis possibilities, we will not be able
+be supporting it. But if there is something specific you think we can
+help with, do reach out.</p>
+<p>If you would like to get acquainted with CALM-Brain and <a class="reference external" href="https://girishmm.github.io/almirah/">almirah</a>, do
+follow through the <a class="reference internal" href="examples/index.html"><span class="doc">Examples Gallery</span></a>. They will lead you through
+simple analysis flows.</p>
+</section>
+<section id="citing-and-contributing">
+<h2>Citing and Contributing<a class="headerlink" href="#citing-and-contributing" title="Link to this heading">¶</a></h2>
+<p>If you use the resource in your work, please consider citing the
+resource and the version you used. If you would like your analysis
+outputs to be available for others, do reach out to <a class="reference external" href="mailto:bhalla&#37;&#52;&#48;ncbs&#46;res&#46;in">us</a>. We would be
+happy to add them as derivatives.</p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="reference.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Resource Reference</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Home</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2024, girish
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              <a class="muted-link " href="https://github.com/girishmm/calm-brain/" aria-label="GitHub">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </a>
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">From access to analysis</a><ul>
+<li><a class="reference internal" href="#requesting-for-access">Requesting for access</a></li>
+<li><a class="reference internal" href="#looking-without-touching">Looking without touching</a></li>
+<li><a class="reference internal" href="#obtaining-a-subset-of-data-files">Obtaining a subset of data files</a></li>
+<li><a class="reference internal" href="#retrieving-tabular-data">Retrieving tabular data</a></li>
+<li><a class="reference internal" href="#analysis">Analysis</a></li>
+<li><a class="reference internal" href="#citing-and-contributing">Citing and Contributing</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=8a448e45"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=4e2eecee"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    </body>
+</html>
