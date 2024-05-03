@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "calm-brain"
+version = "0.1.0"
+description = "Documentation for access and usage of the CALM Brain usage"
+authors = ["Girish Mohan <<mohangiri1999@gmail.com>>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+furo = "^2024.4.27"
+towncrier = "^23.11.0"
+sphinx-autobuild = "^2024.4.16"
+sphinx-copybutton = "^0.5.2"
+almirah = "^0.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.towncrier]
+package = "calm-brain"
+directory = "changelog"
+filename = "CHANGES.rst"
+issue_format = "`#{issue} <shttp://gin.ncbs.res.in:/cbm/data/issues/{issue}>`__"
+title_format = "{version} ({project_date})"
