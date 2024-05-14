@@ -1,18 +1,30 @@
 [tool.poetry]
 name = "calm-brain"
-version = "0.1.0"
-description = "Documentation for access and usage of the CALM Brain usage"
-authors = ["Girish Mohan <<mohangiri1999@gmail.com>>"]
-license = "MIT"
-readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
 furo = "^2024.4.27"
+nbsphinx = "^0.9.3"
+sphinx-gallery = "^0.16.0"
+sphinx-copybutton = "^0.5.2"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.1.8"
 towncrier = "^23.11.0"
 sphinx-autobuild = "^2024.4.16"
-sphinx-copybutton = "^0.5.2"
-almirah = "^0.3.0"
+
+[tool.poetry.group.tutorials.dependencies]
+mne = "^1.7.0"
+numpy = "^1.26.4"
+nibabel = "^5.2.1"
+nilearn = "^0.10.4"
+seaborn = "^0.13.2"
+matplotlib = "^3.8.4"
+almirah = {path = "../almirah", develop = true}
+
+[tool.poetry.group.mysql.dependencies]
+pymysql = "^1.1.0"
 
 [build-system]
 requires = ["poetry-core"]
