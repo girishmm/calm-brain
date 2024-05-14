@@ -6,6 +6,7 @@
 # Ignore build as CI Pipeline takes care.
 docs/build
 
-# Why push pycache?
+# Why push cache and checkpoints?
 __pycache__
 .pytestcache
+.ipynb_checkpoints
