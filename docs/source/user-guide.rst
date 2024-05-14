@@ -4,7 +4,7 @@ From access to analysis
 .. currentmodule:: almirah
 
 The CALM-Brain resource is a rich collection of data obtained from
-over 1000 subjects. To know more about the contents of the dataset,
+over 2500 subjects. To know more about the contents of the dataset,
 please head over to :doc:`reference`. The resource is made of two
 parts: *data files* that organized according to or close to `BIDS`_
 and *tabular records* that are stored in SQL tables.

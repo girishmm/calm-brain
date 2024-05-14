@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "CALM Brain"
+project = "CALM-Brain"
 copyright = "2024, girish"
 author = "girish"
 
