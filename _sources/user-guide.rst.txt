@@ -4,7 +4,7 @@ From access to analysis
 .. currentmodule:: almirah
 
 The CALM-Brain resource is a rich collection of data obtained from
-over 1000 subjects. To know more about the contents of the dataset,
+over 2500 subjects. To know more about the contents of the dataset,
 please head over to :doc:`reference`. The resource is made of two
 parts: *data files* that organized according to or close to `BIDS`_
 and *tabular records* that are stored in SQL tables.
@@ -143,7 +143,7 @@ the resource instead of adding in the components. `almirah`_ by
 default looks for this index at system home. If have requested for
 compute resources and are currently using the server to access the
 resource locally, then you are good to go! If not, you will have to
-download the index and set it up for use.
+download the index from `releases`_ and set it up for use.
 
 Since, we do not know where you plan to store the dataset components,
 the root for different layouts is set to various dummy paths like
@@ -161,12 +161,12 @@ like so:
    
 		# Retrieve the layout you are interested in.
 		# Dummy path have been used while creating the index.
-		dataset = Dataset(name='calm-brain')
+		dataset = Dataset.get(name='calm-brain')
 
 		# View components
 		dataset.components
 
-		# Choose a components
+		# Choose a component
 		layout = dataset.components[0]
 
 		# Change the layout path.
@@ -245,6 +245,27 @@ exhaustively support all analysis possibilities, we will not be able
 be supporting it. But if there is something specific you think we can
 help with, do reach out.
 
+It should be possible to interface almirah with any toolkit available in
+python. We recommend the below libaries as we have found them to play
+well with almirah for neuroimaging and genomics datasets:
+
+.. list-table::
+   :header-rows: 1
+
+   * - Datatype
+     - Recommended libraries
+   * - Magnetic resonance imaging
+     - `nibabel <https://nipy.org/nibabel/>`_
+   * - Electroencephalography
+     - `mne <https://mne.tools/stable/index.html>`_
+   * - Eye tracking
+     - `mne <https://mne.tools/stable/index.html>`_
+   * - Functional near-infrared spectroscopy
+     - `mne-nirs <https://mne.tools/mne-nirs/stable/index.html>`_
+   * - Genomics
+     - `pysam <https://pysam.readthedocs.io/en/latest/index.html>`_,
+       `scikit-allel <https://scikit-allel.readthedocs.io/en/latest/>`_
+
 If you would like to get acquainted with CALM-Brain and `almirah`_, do
 follow through the :doc:`examples/index`. They will lead you through
 simple analysis flows.
@@ -260,5 +281,6 @@ happy to add them as derivatives.
 .. _us: bhalla@ncbs.res.in
 .. _portal: https://www.calm-brain.ncbs.res.in/
 .. _almirah: https://girishmm.github.io/almirah/
+.. _releases: https://github.com/girishmm/calm-brain/releases
 
 

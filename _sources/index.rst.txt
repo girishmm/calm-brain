@@ -1,8 +1,8 @@
-The CALM Brain Resource
+The CALM-Brain Resource
 =======================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
 	      
    user-guide
    reference
