@@ -14,8 +14,10 @@ author = "girish"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+    "nbsphinx",
     "sphinx_copybutton",
     "sphinx.ext.intersphinx",
+    "sphinx_gallery.load_style",
 ]
 
 # -- Places to look for intersphinx ------------------------------------------
