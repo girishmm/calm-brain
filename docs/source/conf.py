@@ -33,7 +33,7 @@ intersphinx_mapping = {
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 pygments_style = "friendly"
 html_theme = "furo"
-html_logo = "images/logo-full-calmbrain.png"
+html_logo = "images/calmbrain.png"
 html_favicon = "images/favicon.ico"
 html_theme_options = {
     "navigation_with_keys": True,
